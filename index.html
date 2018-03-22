@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="ticketarena">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UofT</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <ng-include src="'template/header.html'"></ng-include>
+   
+    <div class="container"> 
+      <div class="chat-bg">
+        <div id="pieChart"></div>
+      </div>
+    </div>
+    <hr class="hr"/>
+    
+    <div ng-controller="listCtrl">
+      
+        <ng-include src="viewFile()"></ng-include>
+        
+        <div class="btn-container">
+          <input type="button" value="Show more" ng-click="showAll()" id="showmore" />
+        </div>
+      <!--<ng-include src="'list.html'"></ng-include>-->
+    </div>
+    
+    <ng-include src="'template/footer.html'"></ng-include>
+   
+
+    <!--js dependences -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://scaleyourcode.com/js/plugins/d3pie/d3pie.min.js"></script>
+    
+    <script src="js/script.js"></script>
+    <script src="js/home-controller.js"></script>
+    
+  </body>
+</html>
