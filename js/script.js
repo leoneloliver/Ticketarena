@@ -15,12 +15,12 @@ var pie = new d3pie("pieChart",{
     data:{
       content:[
         {
-          label:"Iron Maiden",
+          label:"Ozzy Osbourne",
           value:2807,
           color:"#6473ce"
         },
         {
-          label:"Metallica",
+          label:"Pink",
           value:1072,
           color:"#f4837d"
         },
@@ -30,14 +30,19 @@ var pie = new d3pie("pieChart",{
           color:"#00416b"
         },
         {
-          label:"Brian Adams",
+          label:"Camila Cabello",
           value:380,
           color:"#a3cbef"
         },
         {
-          label:"Others",
+          label:"5 Seconds of Summer",
           value:580,
           color:"#01b7ab"
+        },
+        {
+          label:"Halsey",
+          value:310,
+          color:"#333"
         }
       ]
     },
