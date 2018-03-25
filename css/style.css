@@ -257,6 +257,9 @@ body{
   .menu li {
     width: 100%;
   }
+  #pieChart {
+    width: 100%;
+  }
 
 }
 
