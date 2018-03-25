@@ -263,6 +263,9 @@ html.ng-scope {
   #pieChart {
     width: 100%;
   }
+  .event-date, .event-location {
+    text-align: center;
+  }
 
 }
 
