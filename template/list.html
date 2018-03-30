@@ -4,6 +4,10 @@
       <div class="item" ng-repeat="concert in concerts | orderBy : 'title' | limitTo: 3">
         <div class="product">
           <div class="img"><img ng-src="{{concert.image}}"></div>
+          <div class="cover"></div>
+          <div class="content-btn">
+            <a class="buy">Buy Ticket</a>
+          </div>
           <div class="title">{{concert.title}}</div>
           <div class="description">{{concert.desc}}</div>
           <div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{concert.dateEvent}}</div>
