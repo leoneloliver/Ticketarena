@@ -169,6 +169,16 @@ a.buy:hover{
   -ms-transition: all .9s ease;
   transition: all .9s ease;
 }
+.user {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+  position: relative;
+  margin-bottom: -45px;
+  color: #7776;
+  font-size: 2.3em;
+  padding-right: 15px;
+}
 .product .img, .product .price, .product .title{
   text-align: center;
 }
