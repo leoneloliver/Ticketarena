@@ -179,6 +179,15 @@ a.buy:hover{
   font-size: 2.3em;
   padding-right: 15px;
 }
+.user a{
+  font-size: 0.4em;
+  color: #bfbfbf;
+  cursor: pointer;
+}
+.user a:hover{
+  text-decoration: underline;
+  color: #929292;
+}
 .product .img, .product .price, .product .title{
   text-align: center;
 }
@@ -321,7 +330,9 @@ a.buy:hover{
   }
 
 }
-
+@media (max-width: 500px) {
+  .user a{display: none;}
+}
 /**/
 
 /*.chart .legend {*/
