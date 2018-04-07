@@ -91,17 +91,23 @@ setTimeout(function(){ loadChartHOme(); }, 1000);
 var showChart = function () {
   var element = document.getElementById("charthome");
   element.classList.remove("hide");
+  loadChartHOme();
 };
 var hideChart = function () {
   var element = document.getElementById("charthome");
   element.classList.add("hide");
-};  
+}; 
 
-document.getElementById("btn-home").addEventListener("click", showChart);
 
-document.getElementById("btn-add").addEventListener("click", hideChart);
+setTimeout(function(){ 
 
-document.getElementById("btn-search").addEventListener("click", hideChart);
+  document.getElementById("btn-home").addEventListener("click", showChart);
+  document.getElementById("btn-add").addEventListener("click", hideChart);
+  document.getElementById("btn-search").addEventListener("click", hideChart);
+
+}, 1000); 
+
+
 
 
 
