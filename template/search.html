@@ -3,7 +3,7 @@
 
   <input type="text" placeholder="Find a event" data-search />
 
-  <div class="item" ng-repeat="concert in Newconcerts | orderBy : 'title'" data-filter-item data-filter-name={{concert.title | lowercase}}>
+  <div class="item" ng-repeat="concert in Newconcerts | orderBy : 'title'" data-filter-item data-filter-name='{{concert.title | lowercase}}'>
     <div class="product">
       <div class="img"><img ng-src="{{concert.image}}"></div>
       <div class="cover"></div>
