@@ -54,7 +54,15 @@ myApp.config(function($routeProvider) {
       $scope.showAll = function () {
         var element = document.getElementById("showmore");
         element.parentNode.removeChild(element);
-      };      
+      };   
+      $scope.showChart = function () {
+        var element = document.getElementById("charthome");
+        element.classList.remove("hide");
+      };
+      $scope.hideChart = function () {
+        var element = document.getElementById("charthome");
+        element.classList.add("hide");
+      };     
       
   }]);
   
