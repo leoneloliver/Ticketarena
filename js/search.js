@@ -1,10 +1,11 @@
 $(document).ready(function() {
   setTimeout(function(){ 
     activateSearch();
+    document.getElementById("btn-search").addEventListener("click", activateSearch());
   },3000); 
 });
 
-document.getElementById("btn-search").addEventListener("click", activateSearch());
+
 
 function activateSearch(){
   // search top bar behaviors
