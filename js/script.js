@@ -1,5 +1,8 @@
 // Code goes here
-var pie = new d3pie("pieChart",{
+
+function loadChartHOme(){
+
+  var pie = new d3pie("pieChart",{
     header:{
       title:{
         text:"Sales March 2018",
@@ -78,8 +81,12 @@ var pie = new d3pie("pieChart",{
       }
     }
   });
+ 
+
+ } 
   
-  
+
+setTimeout(function(){ loadChartHOme(); }, 3000);
 
 
 
