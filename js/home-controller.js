@@ -33,11 +33,11 @@ myApp.config(function($routeProvider) {
     
       //save it with local storage
       if(localStorage.concerts){
-        var Myconcert = localStorage.concerts;
-        // var Myconcert = JSON.stringify(localStorage.concerts);
+        // var Myconcert = localStorage.concerts;
+        var Myconcert = JSON.stringify($scope.concerts);
       }else{
         //convert JSON animal into a string
-        var Myconcert = $scope.concerts;
+        var Myconcert = JSON.stringify($scope.concerts);
       }
       window.localStorage.setItem('concerts', Myconcert);
       
