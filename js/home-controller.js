@@ -37,7 +37,7 @@ myApp.config(function($routeProvider) {
       }
       window.localStorage.setItem('concerts', Myconcert);
       
-      $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
+      $scope.Newconcerts = window.localStorage.getItem('concerts');
       
       $scope.insertData = function (){
         // inserting new data
