@@ -97,10 +97,6 @@ var hideChart = function () {
   element.classList.add("hide");
 };  
 
-document.getElementById("home").addEventListener("click", function(){
-  showChart();  
-});
-
 document.getElementById("btn-home").addEventListener("click", showChart);
 
 document.getElementById("btn-add").addEventListener("click", hideChart);
