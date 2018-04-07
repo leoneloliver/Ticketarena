@@ -6,7 +6,7 @@ $(document).ready(function() {
       var filterItems = $('[data-filter-item]');
       if ( searchVal !== '' ) {
       	filterItems.addClass('hide');
-      	$('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').removeClass('hidden');
+      	$('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').removeClass('hide');
       	//$('.term').text("#"+searchVal.toLowerCase());
       } else {
       	filterItems.removeClass('hide');
