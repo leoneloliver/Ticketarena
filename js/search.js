@@ -9,7 +9,7 @@ $(document).ready(function() {
       	$('[data-filter-item][data-filter-name*="' + searchVal + '"]').removeClass('hide');
       	//$('.term').text("#"+searchVal.toLowerCase());
       } else {
-      	filterItems.removeClass('hide');
+      	filterItems.addClass('hide');
       	//$('.term').text('');
       }
     });
