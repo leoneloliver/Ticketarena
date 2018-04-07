@@ -14,7 +14,7 @@ myApp.config(function($routeProvider) {
     
     $http.get('https://api.myjson.com/bins/1fmg07').
       then(function(response) {
-          $scope.concerts = JSON.parse(response.data);
+          $scope.concerts = response.data;
           console.log($scope.concerts);
       });
 
@@ -30,7 +30,7 @@ myApp.config(function($routeProvider) {
       }else{
         var Myconcert = JSON.stringify($scope.concerts);
       }
-      window.localStorage.setItem('concerts', Myconcert);
+      window.localStorage.setItem('concerts', JSON.stringify(Myconcert));
       
       $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
       
