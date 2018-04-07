@@ -12,5 +12,5 @@ $(document).ready(function() {
       	filterItems.removeClass('hidden');
       	$('.term').text('');
       }
-  });
+  },3000); 
 });
