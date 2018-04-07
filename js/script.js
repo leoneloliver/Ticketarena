@@ -96,7 +96,7 @@ var hideChart = function () {
   element.classList.add("hide");
 }; 
 var gotoSearch = function() {
-  window.location = '#!search';
+  window.location = 'https://ticketarena.netlify.com/#!/search';
 }
 
 setTimeout(function(){ 
