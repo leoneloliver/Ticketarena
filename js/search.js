@@ -1,7 +1,6 @@
 $(document).ready(function() {
   setTimeout(function(){ 
     activateSearch();
-    document.getElementById("btn-search").addEventListener("click", activateSearch());
   },3000); 
 });
 
