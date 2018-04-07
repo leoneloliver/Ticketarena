@@ -72,8 +72,8 @@ html.ng-scope {
   transition: all .9s ease;
 }
 .container {
-  min-height: 400px;
-  padding: 30px;
+  min-height: auto;
+  /*padding: 30px;*/
   clear: both;
   max-width: 1200px;
   margin: 0 auto;
