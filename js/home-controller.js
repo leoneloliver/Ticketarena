@@ -54,6 +54,7 @@ myApp.config(function($routeProvider) {
       $scope.showAll = function () {
         var element = document.getElementById("showmore");
         element.parentNode.removeChild(element);
+        alert();
       };   
       $scope.showChart = function () {
         var element = document.getElementById("charthome");
