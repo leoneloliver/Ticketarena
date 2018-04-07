@@ -42,7 +42,7 @@ myApp.config(function($routeProvider) {
       
       $scope.insertData = function (){
         // inserting new data
-        var oldArray = JSON.parse(window.localStorage.getItem('concerts'));
+        var oldArray = window.localStorage.getItem('concerts');
         var newProduct = [{ title: "Halsey", image: "https://ssli.ebayimg.com/images/g/oy4AAOSwsW9Y2tRg/s-l1600.jpg", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", dateEvent: "Thu, Aug 30, 2018 - 7:00pm", location: "Rogers Centre, Toronto ON", price: 300 }];
   
         var ConvertMyconcert = JSON.stringify(oldArray.concat(newProduct));
