@@ -1,11 +1,11 @@
 $(document).ready(function() {
   setTimeout(function(){ 
-    activateSearch();
+    $("#btn-search").on('click', function(){
+      alert();
+      activateSearch();
+    });
   },3000); 
-  $("#btn-search").on('click', function(){
-    alert();
-    activateSearch();
-  });
+  
 });
 
 function activateSearch(){
