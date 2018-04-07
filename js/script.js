@@ -96,7 +96,7 @@ var hideChart = function () {
   element.classList.add("hide");
 }; 
 var gotoSearch = function() {
-  window.location = '#!new-product';
+  window.location = '#!search';
 }
 
 setTimeout(function(){ 
