@@ -30,7 +30,7 @@ myApp.config(function($routeProvider) {
       }else{
         var Myconcert = $scope.concerts;
       }
-      window.localStorage.setItem('concerts', Myconcert);
+      window.localStorage.setItem('concerts', $scope.concerts);
       
       $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
       
