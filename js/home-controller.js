@@ -33,7 +33,8 @@ myApp.config(function($routeProvider) {
       if(localStorage.concerts){
         var Myconcert = localStorage.concerts;
       }else{
-        var Myconcert = $scope.concerts;
+        // var Myconcert = $scope.concerts;
+        var Myconcert = JSON.stringify($scope.concerts);
       }
       window.localStorage.setItem('concerts', Myconcert);
       
