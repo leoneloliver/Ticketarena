@@ -4,6 +4,8 @@ $(document).ready(function() {
   },3000); 
 });
 
+document.getElementById("btn-search").addEventListener("click", activateSearch());
+
 function activateSearch(){
   // search top bar behaviors
     $('[data-search]').on('change keyup input', function() {
