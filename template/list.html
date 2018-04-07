@@ -1,43 +1,20 @@
-    <div class="list-container">
-      <p class="event-title">All Events Near Toronto, ON</p>
-    
-      <div class="item" ng-repeat="concert in Newconcerts | orderBy : 'title' | limitTo: 3">
-        <div class="product">
-          <div class="title">{{concert.title}}</div>
-          <div class="img"><img ng-src="{{concert.image}}"></div>
-          <div class="description">{{concert.desc}}</div>
-          <div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{concert.dateEvent}}</div>
-          <div class="event-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{concert.location}}</div>
-          <div class="price">{{concert.price | currency : $ : 2}}</div>
-        </div>
-        
-      </div>
-      
-      <!--<div class="item">-->
-      <!--  <div class="product">-->
-      <!--    <div class="title">Ed Sheeran</div>-->
-      <!--    <div class="img"><img src="https://ssli.ebayimg.com/images/g/4l8AAOSw32lYyHi1/s-l1600.jpg"></div>-->
-      <!--    <div class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>-->
-      <!--    <div class="event-date">Thu, Aug 30, 2018 - 7:00pm</div>-->
-      <!--    <div class="event-location">Rogers Centre, Toronto ON</div>-->
-      <!--    <div class="price">$ 3000</div>-->
-      <!--  </div>-->
-      <!--</div>-->
-      <!--<div class="item">-->
-      <!--  <div class="product">-->
-      <!--    <div class="title">5 Seconds of Summer</div>-->
-      <!--    <div class="img"><img src="https://ssli.ebayimg.com/images/g/Yo8AAOSwfVpYo4aY/s-l1600.jpg"></div>-->
-      <!--    <div class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>-->
-      <!--    <div class="event-date">Thu, Aug 30, 2018 - 7:00pm</div>-->
-      <!--    <div class="event-location">Rogers Centre, Toronto ON</div>-->
-      <!--    <div class="price">$ 3000</div>-->
-      <!--  </div>-->
-      <!--</div>-->
-      
-       <div class="btn-container">
-          <a href="#!full" id="showmore" />Show More</a>
-          
-        </div>
-      <hr class="hr"/>
+<div class="list-container">
+  <p class="event-title">All Events Near Toronto, ON</p>
+
+  <div class="item" ng-repeat="concert in Newconcerts | orderBy : 'title' | limitTo: 3">
+    <div class="product">
+      <div class="title">{{concert.title}}</div>
+      <div class="img"><img ng-src="{{concert.image}}"></div>
+      <div class="description">{{concert.desc}}</div>
+      <div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{concert.dateEvent}}</div>
+      <div class="event-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{concert.location}}</div>
+      <div class="price">{{concert.price | currency : $ : 2}}</div>
     </div>
+  </div>
+  
+  <div class="btn-container">
+    <a href="#!full" id="showmore" />Show More</a>   
+  </div>
+  <hr class="hr"/>
+</div>
     

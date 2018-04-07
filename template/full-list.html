@@ -1,17 +1,17 @@
 <div class="list-container">
-      <p class="event-title">All Events Near Toronto, ON</p>
-    
-      <div class="item" ng-repeat="concert in Newconcerts| orderBy : 'title'">
-        <div class="product">
-          <div class="title">{{concert.title}}</div>
-          <div class="img"><img ng-src="{{concert.image}}"></div>
-          <div class="description">{{concert.desc}}</div>
-          <div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{concert.dateEvent}}</div>
-          <div class="event-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{concert.location}}</div>
-          <div class="price">{{concert.price | currency : $ : 2}}</div>
-        </div>
-        
-      </div>
-      
-      <hr class="hr"/>
+  <p class="event-title">All Events Near Toronto, ON</p>
+
+  <div class="item" ng-repeat="concert in Newconcerts| orderBy : 'title'">
+    <div class="product">
+      <div class="title">{{concert.title}}</div>
+      <div class="img"><img ng-src="{{concert.image}}"></div>
+      <div class="description">{{concert.desc}}</div>
+      <div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{concert.dateEvent}}</div>
+      <div class="event-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{concert.location}}</div>
+      <div class="price">{{concert.price | currency : $ : 2}}</div>
     </div>
+    
+  </div>
+  
+  <hr class="hr"/>
+</div>
