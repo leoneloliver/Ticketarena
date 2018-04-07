@@ -1,9 +1,6 @@
 $(document).ready(function() {
   setTimeout(function(){ 
-    $("#btn-search").on('click', function(){
-      alert();
-      activateSearch();
-    });
+    activateSearch();
   },3000); 
   
 });
@@ -23,5 +20,13 @@ function activateSearch(){
       }
     });
 }
+
+$(document).ready(function() {
+  setTimeout(function(){ 
+    $("#btn-search").on('click', function(){
+      activateSearch();
+    });
+  },4000); 
+});
 
 
