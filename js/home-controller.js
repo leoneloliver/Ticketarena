@@ -4,10 +4,10 @@ var myApp = angular.module("ticketarena", ['ngRoute']);
 myApp.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "list.html"
+        templateUrl : "template/list.html"
     })
     .when("/full", {
-        templateUrl : "full-list.html"
+        templateUrl : "template/full-list.html"
     })
 });
 
