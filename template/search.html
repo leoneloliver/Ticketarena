@@ -5,7 +5,7 @@
     <input type="text" placeholder="Find a event" data-search class="search-field"/>
   </div>  
 
-  <div class="item hide" ng-repeat="concert in Newconcerts | orderBy : 'title'" data-filter-item data-filter-name={{concert.title}}>
+  <div class="item hide" ng-repeat="concert in Newconcerts | orderBy : 'title'" data-filter-item data-filter-name={{concert.title.toLowerCase()}}>
     <div class="product">
       <div class="img"><img ng-src="{{concert.image}}"></div>
       <div class="cover"></div>
