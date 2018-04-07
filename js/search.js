@@ -7,10 +7,11 @@ $(document).ready(function() {
       if ( searchVal !== '' ) {
       	filterItems.addClass('hidden');
       	$('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').removeClass('hidden');
-      	$('.term').text("#"+searchVal.toLowerCase());
+      	//$('.term').text("#"+searchVal.toLowerCase());
       } else {
-      	filterItems.removeClass('hidden');
-      	$('.term').text('');
+      	filterItems.removeClass('hidde');
+      	//$('.term').text('');
       }
+    });
   },3000); 
 });
