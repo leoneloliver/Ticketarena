@@ -95,14 +95,11 @@ var hideChart = function () {
   var element = document.getElementById("charthome");
   element.classList.add("hide");
 }; 
-var gotoSearch = function() {
-  window.location = 'https://ticketarena.netlify.com/#!/search';
-}
 
 setTimeout(function(){ 
   document.getElementById("btn-home").addEventListener("click", showChart);
   document.getElementById("btn-add").addEventListener("click", hideChart);
-  document.getElementById("btn-search").addEventListener("click", gotoSearch);
+  document.getElementById("btn-search").addEventListener("click", hideChart);
 }, 2000); 
 
 function loadObject(){
