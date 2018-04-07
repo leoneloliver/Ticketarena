@@ -1,7 +1,7 @@
 $(document).ready(function() {
   setTimeout(function(){ 
     activateSearch();
-  },4000); 
+  },3000); 
   
 });
 
@@ -20,13 +20,5 @@ function activateSearch(){
       }
     });
 }
-
-$(document).ready(function() {
-  setTimeout(function(){ 
-    $("#btn-search").on('click', function(){
-      activateSearch();
-    });
-  },5000); 
-});
 
 
