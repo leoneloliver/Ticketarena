@@ -58,6 +58,7 @@ myApp.config(function($routeProvider) {
       $scope.showChart = function () {
         var element = document.getElementById("charthome");
         element.classList.remove("hide");
+        alert();
       };
       $scope.hideChart = function () {
         var element = document.getElementById("charthome");
