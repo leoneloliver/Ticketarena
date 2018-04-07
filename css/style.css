@@ -320,6 +320,9 @@ a.buy:hover{
   }
 }
 @media (max-width: 620px){
+  .search-field{
+    width: 90%;
+  }
   .menu {
     height: 128px;
     margin-top: 80px;
