@@ -8,6 +8,9 @@ myApp.config(function($routeProvider) {
     .when("/full", {
         templateUrl : "template/full-list.html"
     })
+    .when("/search", {
+        templateUrl : "template/search.html"
+    })
 });
 
   myApp.controller('listCtrl', ['$scope', '$filter', '$http', function($scope, $filter, $http) {
