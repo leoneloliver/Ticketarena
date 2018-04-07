@@ -15,7 +15,7 @@ myApp.config(function($routeProvider) {
     $http.get('https://api.myjson.com/bins/1fmg07').
       then(function(response) {
           $scope.concerts = response.data;
-          console.log($scope.concerts);
+          console.log(JSON.parse($scope.concerts));
       });
 
 
