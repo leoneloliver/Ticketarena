@@ -111,7 +111,11 @@ var myUrl = window.location.href;
 var myarr = myUrl.split("!");
 
 //Then read the values from the array where 0 is the first
-console.log(myarr[0]);
+console.log(myarr[1]);
+
+if(myarr[1]=='/search'){
+  hideChart();
+}
 
 
 
