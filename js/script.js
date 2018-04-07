@@ -91,7 +91,6 @@ setTimeout(function(){ loadChartHOme(); }, 1000);
 var showChart = function () {
   var element = document.getElementById("charthome");
   element.classList.remove("hide");
-  alert();
 };
 var hideChart = function () {
   var element = document.getElementById("charthome");
@@ -102,13 +101,12 @@ document.getElementById("home").addEventListener("click", function(){
   showChart();  
 });
 
-document.getElementById("addproduct").addEventListener("click", function(){
-  hideChart();  
-});
+document.getElementById("btn-home").addEventListener("click", showChart);
 
-document.getElementById("addproduct").addEventListener("click", function(){
-  search();  
-});
+document.getElementById("btn-add").addEventListener("click", hideChart);
+
+document.getElementById("btn-search").addEventListener("click", hideChart);
+
 
 
 
