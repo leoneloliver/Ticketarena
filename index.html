@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>[ Tikcketarena ]</title>
+    <title>UofT</title>
     
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ng-include src="'template/header.html'"></ng-include>
+    <ng-include src="'header.html'"></ng-include>
    
     <div class="container"> 
       <div class="chat-bg">
@@ -21,25 +21,34 @@
     
     <div ng-controller="listCtrl">
       
-        <ng-view></ng-view>
-        <br />
-        <div class="btn-container">
-          <input type="button" value="insert" ng-click="insertData()" id="showmore" />
-        </div>
+      <ng-view></ng-view>
+      
+        <!--<ng-include src="viewFile()"></ng-include>-->
         
+        <!--<div class="btn-container">-->
+        <!--  <input type="button" value="Show more" ng-click="showAll()" id="showmore" />-->
+        <!--</div>-->
+        
+        <input type="button" value="insert" ng-click="insertData()" id="showmore" />
+        
+        
+        
+      <!--<ng-include src="'list.html'"></ng-include>-->
     </div>
     
-    <ng-include src="'template/footer.html'"></ng-include>
+    <ng-include src="'footer.html'"></ng-include>
    
 
     <!--js dependences -->
-    <script src="js/angular.min.js"></script>
-     <script data-require="angular-route@1.3.0" data-semver="1.3.0" src="https://code.angularjs.org/1.3.0/angular-route.js"></script>
-    <script src="js/d3.v3.min.js"></script>
-    <script src="js/d3pie.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script data-require="angular-route@1.3.0" data-semver="1.3.0" src="https://code.angularjs.org/1.3.0/angular-route.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://scaleyourcode.com/js/plugins/d3pie/d3pie.min.js"></script>
     
-    <script src="js/script.js"></script>
-    <script src="js/home-controller.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    
+    <script src="script.js"></script>
+    <script src="home-controller.js"></script>
     
   </body>
 </html>
