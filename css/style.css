@@ -304,8 +304,7 @@ a.buy:hover{
     width: 100%;
   }
   .container {
-    min-height: 400px;
-    padding: 30px;
+    min-height: auto;
     clear: both;
     max-width: 1200px;
     margin: 0 auto;
