@@ -96,7 +96,20 @@ var showChart = function () {
 var hideChart = function () {
   var element = document.getElementById("charthome");
   element.classList.add("hide");
-};     
+};  
+
+document.getElementById("home").onclick = function(){
+  showChart();
+} 
+document.getElementById("addproduct").onclick = function(){
+  hidehart();
+} 
+document.getElementById("search").onclick = function(){
+  hidehart();
+} 
+
+
+  
 
 
 
