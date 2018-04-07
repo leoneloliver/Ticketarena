@@ -88,12 +88,12 @@ function loadChartHOme(){
 
 setTimeout(function(){ loadChartHOme(); }, 3000);
 
-var = showChart = function () {
+var showChart = function () {
   var element = document.getElementById("charthome");
   element.classList.remove("hide");
   alert();
 };
-var = hideChart = function () {
+var hideChart = function () {
   var element = document.getElementById("charthome");
   element.classList.add("hide");
 };     
