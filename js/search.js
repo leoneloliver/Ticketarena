@@ -5,11 +5,11 @@ $(document).ready(function() {
       var searchVal = $(this).val();
       var filterItems = $('[data-filter-item]');
       if ( searchVal !== '' ) {
-      	filterItems.addClass('hidden');
+      	filterItems.addClass('hide');
       	$('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').removeClass('hidden');
       	//$('.term').text("#"+searchVal.toLowerCase());
       } else {
-      	filterItems.removeClass('hidde');
+      	filterItems.removeClass('hide');
       	//$('.term').text('');
       }
     });
