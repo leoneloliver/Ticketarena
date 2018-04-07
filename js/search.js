@@ -13,11 +13,15 @@ function activateSearch(){
       var filterItems = $('[data-filter-item]');
       if ( searchVal !== '' ) {
         filterItems.addClass('hide');
-        $('[data-filter-item][data-filter-name*="' + searchVal + '"]').removeClass('hide');
+        $('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').removeClass('hide');
         //$('.term').text("#"+searchVal.toLowerCase());
       } else {
-        filterItems.removeClass('hide');
+        filterItems.addClass('hide');
         //$('.term').text('');
       }
     });
 }
+
+setTimeout(function(){ 
+  document.getElementById("btn-search").addEventListener("click", activateSearch);
+}, 2000); 
