@@ -1,7 +1,7 @@
+var myApp = angular.module("ticketarena", ['ngRoute']);
 
-var app = angular.module("ticketarena", ['ngRoute']);
 
-  app.config(function($routeProvider) {
+myApp.config(function($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl : "list.html"
@@ -9,14 +9,15 @@ var app = angular.module("ticketarena", ['ngRoute']);
     .when("/full", {
         templateUrl : "full-list.html"
     })
-  });
+});
 
-  app.controller('listCtrl', ['$scope', '$filter', '$http', function($scope, $filter, $http) {
+  myApp.controller('listCtrl', ['$scope', '$filter', '$http', function($scope, $filter, $http) {
+    
     $http.get('https://api.myjson.com/bins/1fmg07').
       then(function(response) {
           $scope.concerts = response.data;
       });
-
+      
       //--------------------------------------------------
       // working with data storege
     
@@ -48,11 +49,20 @@ var app = angular.module("ticketarena", ['ngRoute']);
         $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
       }
       //----------------------------------------------------
+ 
+      $scope.viewFile = function () {
+        return "list.html";
+      };
       
       $scope.showAll = function () {
+        $scope.viewFile = function () {
+          return  "full-list.html";
+        };
         var element = document.getElementById("showmore");
         element.parentNode.removeChild(element);
       };
+      
+      
   }]);
 
 
