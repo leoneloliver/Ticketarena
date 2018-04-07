@@ -86,7 +86,7 @@ function loadChartHOme(){
  } 
   
 
-setTimeout(function(){ loadChartHOme(); }, 3000);
+setTimeout(function(){ loadChartHOme(); }, 1000);
 
 var showChart = function () {
   var element = document.getElementById("charthome");
@@ -98,15 +98,18 @@ var hideChart = function () {
   element.classList.add("hide");
 };  
 
-document.getElementById("home").onclick = function(){
-  showChart();
-} 
-document.getElementById("addproduct").onclick = function(){
-  hidehart();
-} 
-document.getElementById("search").onclick = function(){
-  hidehart();
-} 
+document.getElementById("home").addEventListener("click", function(){
+  showChart();  
+});
+
+document.getElementById("addproduct").addEventListener("click", function(){
+  hideChart();  
+});
+
+document.getElementById("addproduct").addEventListener("click", function(){
+  search();  
+});
+
 
 
   
