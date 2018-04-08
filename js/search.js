@@ -1,7 +1,7 @@
 $(document).ready(function() {
   setTimeout(function(){ 
     activateSearch();
-  },3000); 
+  },4000); 
   
 });
 
@@ -33,7 +33,5 @@ if(myarr[1]=='/search'){
   hideChart();
 }
 
-$('.search-field').mouseover(function() {
-  activateSearch();
-});
+
 
