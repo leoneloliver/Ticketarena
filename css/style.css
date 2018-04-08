@@ -312,6 +312,28 @@ a.buy:hover{
   background: #f7c6c6;
   border: #000 1px solid;
 }
+.title-table {
+    float: left;
+    margin-top: 20px;
+    color: #101010;
+}
+.list-table {
+    height: 72px;
+    border-bottom: 1px solid #ea4042;
+    padding-top: 8px;
+    border-top: 1px solid #ea4042;
+}
+.list-table:hover{
+  background: #ffffff;
+}
+.img-min img {
+    height: 60px;
+    width: 100px;
+    float: left;
+    margin-left: 11px;
+    margin-top: 3px;
+    margin-right: 12px;
+}
 
 @media (max-width: 799px){
   .item {

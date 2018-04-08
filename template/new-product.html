@@ -7,10 +7,14 @@
    <input type="button" value="insert" ng-click="insertData()" id="showmore" />
 	</div> 
 
+	<br>
+
+
+	<p class="event-title">Events List</p>
   <div class="item-table" ng-repeat="concert in Newconcerts | orderBy : 'title'">
     <div class="list-table">
       <div class="img-min"><img ng-src="{{concert.image}}"></div>
-      <div class="title">{{concert.title}}</div>
+      <div class="title title-table">{{concert.title}}</div>
     </div>
     
   </div>
