@@ -11,6 +11,9 @@ myApp.config(function($routeProvider) {
     .when("/search", {
         templateUrl : "template/search.html"
     })
+    .when("/new-product", {
+        templateUrl : "template/new-product.html"
+    })
 });
 
   myApp.controller('listCtrl', ['$scope', '$filter', '$http', function($scope, $filter, $http) {

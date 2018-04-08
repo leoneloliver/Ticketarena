@@ -95,7 +95,6 @@ var showChart = function () {
 var hideChart = function () {
   var element = document.getElementById("charthome");
   element.classList.add("hide");
-  alert();
   setTimeout(function(){ onSearch();; }, 1000);
 }; 
 

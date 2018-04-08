@@ -28,9 +28,9 @@ var myUrl = window.location.href;
 var myarr = myUrl.split("!");
 
 //Then read the values from the array where 0 is the first
-console.log('router: '+myarr[1]);
+console.log('first page router: '+myarr[1]);
 
-if(myarr[1]=='/search'){
+if((myarr[1]=='/search' || myarr[1]=='/new-product'){
   hideChart();
 }
 
