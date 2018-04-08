@@ -90,11 +90,19 @@ setTimeout(function(){ loadChartHOme(); }, 1000);
 var showChart = function () {
   var element = document.getElementById("charthome");
   element.classList.remove("hide");
+  onSearch();
 };
 var hideChart = function () {
   var element = document.getElementById("charthome");
   element.classList.add("hide");
+  onSearch();
 }; 
+
+function onSearch(){
+  $('.search-field').mouseover(function() {
+    activateSearch();
+  });
+}
 
 setTimeout(function(){ 
   document.getElementById("btn-home").addEventListener("click", showChart);
