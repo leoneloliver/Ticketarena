@@ -90,12 +90,13 @@ setTimeout(function(){ loadChartHOme(); }, 1000);
 var showChart = function () {
   var element = document.getElementById("charthome");
   element.classList.remove("hide");
-  onSearch();
+  setTimeout(function(){ onSearch();; }, 1000);
 };
 var hideChart = function () {
   var element = document.getElementById("charthome");
   element.classList.add("hide");
-  onSearch();
+  alert();
+  setTimeout(function(){ onSearch();; }, 1000);
 }; 
 
 function onSearch(){

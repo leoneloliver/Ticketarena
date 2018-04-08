@@ -6,6 +6,7 @@ $(document).ready(function() {
 });
 
 function activateSearch(){
+  console.log('activate search');
   // search top bar behaviors
     $('[data-search]').on('change keyup input', function() {
       var searchVal = $(this).val();
