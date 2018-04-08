@@ -99,7 +99,13 @@ var hideChart = function () {
 }; 
 
 function onSearch(){
-  $('.search-field').mouseover(function() {
+  $('.search-field, .list-container').mouseover(function() {
+    activateSearch();
+  });
+  $('#btn-search').mouseout(function(){
+    activateSearch();
+  });
+  $('#btn-search').mouseleave(function(){
     activateSearch();
   });
 }
