@@ -55,7 +55,7 @@ function loadChartHOme(){
       },
       mainLabel:{
         font:"verdana",
-        color:"#000",
+        color:"#fff",
         fontSize: 18
       },
       percentage:{
@@ -70,7 +70,7 @@ function loadChartHOme(){
       // },
       lines:{
         enabled:!0,
-        color:"#000"
+        color:"#efefef"
       }
     },
     effects:{

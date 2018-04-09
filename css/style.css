@@ -247,6 +247,8 @@ a.buy:hover{
 .chat-bg {
   padding-top: 26px;
   background: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/62/58/9357aaf395cae75.jpg);
+  background: url(../img/background.jpg);
+  background-position: center;
   background-size: cover;
 }
 .event-date, .event-location {
