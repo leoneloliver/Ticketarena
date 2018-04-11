@@ -15,8 +15,7 @@
     <div class="list-table">
       <div class="img-min"><img ng-src="{{concert.image}}"></div>
       <div class="title title-table">{{concert.title}}</div>
-
-      <button ng-click="remove($index)">delete</button>
+      <a ng-click="remove($index)" class="delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
     </div>
     
   </div>
