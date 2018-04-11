@@ -134,7 +134,7 @@ html.ng-scope {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 38px;
+  height: 46px;
   background: #ffffff;
   margin-top: -34px;
 }
@@ -335,6 +335,10 @@ a.buy:hover{
     margin-left: 11px;
     margin-top: 3px;
     margin-right: 12px;
+}
+.img {
+    max-height: 179px;
+    overflow: hidden;
 }
 a.delete {
     background: #e94042;
