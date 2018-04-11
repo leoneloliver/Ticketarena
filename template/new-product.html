@@ -15,7 +15,7 @@
     <div class="list-table">
       <div class="img-min"><img ng-src="{{concert.image}}"></div>
       <div class="title title-table">{{concert.title}}</div>
-      <a ng-click="deleteItem({{$index}})">del</a>
+      <input type="button" value="delete" ng-click="deleteItem($index)" id="del" />
     </div>
     
   </div>
