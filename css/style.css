@@ -358,7 +358,6 @@ a.delete:hover {
 /*form*/
 
 #container{
-  width: 500px;
   margin: 0 auto;
   background: #fff;
   padding: 40px;
@@ -370,12 +369,14 @@ a.delete:hover {
 }
 
 #container input[type="text"] {
-  width: 388px;
+  width: 100%;
   padding: 8px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-top: 8px;
 }
+
 #container select {
   border: 1px solid #ccc;
   width: 100%;
@@ -386,16 +387,17 @@ a.delete:hover {
   font-size: 1.1em;
 }
 #container input[type="submit"] {
-  width: 100%;
-  display: block;
-  padding: 8px;
-  border: 1px solid #b2b2b2;
-  background: #b95f1b;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  height: 44px;
-  font-size: 1.1em;
+    width: 100%;
+    display: block;
+    padding: 8px;
+    border: 1px solid #b2b2b2;
+    background: #ea4042;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 44px;
+    font-size: 1.1em;
+    border-radius: 30px;
 }
 #container input[type="submit"]:hover{
   background: #7b746f;
@@ -407,6 +409,7 @@ a.delete:hover {
     text-align: left;
     border-radius: 4px;
     border: 1px solid #ef8233;
+    width: 100%;
 }
 
 .ng-valid{
