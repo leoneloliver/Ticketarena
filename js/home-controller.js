@@ -65,8 +65,9 @@ myApp.config(function($routeProvider) {
         if(dataCostumer){
           $scope.master = angular.copy(dataCostumer);
         }
-        
-        if($scope.master.firstName && $scope.master.lastName && $scope.master.gender && $scope.master.car && ($scope.master.employment || $scope.master.employment2)){
+
+
+        if($scope.master.title && $scope.master.desc && $scope.master.dateEvent && $scope.master.location && $scope.master.image && $scope.master.price){
           //alert('sent');
           console.log($scope.master);
           alert('insert');

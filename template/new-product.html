@@ -4,51 +4,49 @@
   <!-- form -->
     <div id="container">
       
-      <p class="title">Please enter the following mandatory information</p>
+      <p class="title">Please enter the following information</p>
       <form name="identification" novalidate>
-        <p>First Name:<input type="text" id="firstName" ng-model="custumer.firstName" name="firstName" ng-required="true" placeholder="Enter Name" />
-          <div ng-show="identification.$submitted || identification.firstName.$touched">
-            <div class="error" id="firstNameError" ng-show="identification.firstName.$error.required">first name</div>
+        <p>Artist:<input type="text" id="title" ng-model="custumer.title" name="title" ng-required="true" placeholder="Enter Artist Name" />
+          <div ng-show="identification.$submitted || identification.title.$touched">
+            <div class="error" id="firstNameError" ng-show="identification.title.$error.required">Artist</div>
           </div>
         </p>
-        <p>Last Name:<input type="text" id="lastName" ng-model="custumer.lastName" name="lastName" ng-required="true" placeholder="Enter Name"/>
-          <div ng-show="identification.$submitted || identification.lastName.$touched">
-            <div class="error" id="lastNameError" ng-show="identification.lastName.$error.required">last name</div>
+        <p>Description:<input type="text" id="desc" ng-model="custumer.desc" name="desc" ng-required="true" placeholder="Description"/>
+          <div ng-show="identification.$submitted || identification.desc.$touched">
+            <div class="error" id="lastNameError" ng-show="identification.desc.$error.required">Description</div>
+          </div>
+        </p>
+        <p>Date:<input type="text" id="dateEvent" ng-model="custumer.dateEvent" name="dateEvent" ng-required="true" placeholder="dateEvent"/>
+          <div ng-show="identification.$submitted || identification.dateEvent.$touched">
+            <div class="error" id="lastNameError" ng-show="identification.dateEvent.$error.required">Date Event</div>
+          </div>
+        </p>
+        <p>Price: $<input type="text" id="price" ng-model="custumer.price" name="price" ng-required="true" placeholder="price"/>
+          <div ng-show="identification.$submitted || identification.price.$touched">
+            <div class="error" id="lastNameError" ng-show="identification.price.$error.required">Price</div>
+          </div>
+        </p>
+
+        <p>Image: $<input type="text" id="image" ng-model="custumer.image" name="image" ng-required="true" placeholder="image path"/>
+          <div ng-show="identification.$submitted || identification.image.$touched">
+            <div class="error" id="lastNameError" ng-show="identification.image.$error.required">Image Path</div>
           </div>
         </p>
       
-        <p>Gender Type:
-          <div ng-show="identification.$submitted || identification.gender.$touched">
-            <div class="error" id="genderError" ng-show="identification.gender.$error.required">gender</div>
-          </div>
-          
-        </p>
-        <input type="radio" id="gender1" name="gender" ng-model="custumer.gender" ng-required="true" value="male">Male<br />
-        <input type="radio" id="gender2" name="gender" ng-model="custumer.gender" ng-required="true" value="female" />Female<br />
-        <input type="radio" id="gender3" name="gender" ng-model="custumer.gender" ng-required="true" value="other" />Other<br />
-        
         
         
       
-        <p>Employment situation:
-          <div ng-show="identification.$submitted || identification.employment.$touched">
-            <div class="error" id="employmentError" ng-show="identification.employment.$error.required && identification.employment2.$error.required">employment</div>
-          </div>
-        </p>
-        <input type="checkbox" id="employment1" value="employ" name="employment" ng-model="custumer.employment" ng-required="true"/>Employ<br />
-        <input type="checkbox" id="employment2" value="unemploy" name="employment2" ng-model="custumer.employment2" ng-required="true"/>Not Employ<br />
       
-        <p>Current car brand:
-          <div ng-show="identification.$submitted || identification.car.$touched">
-            <div class="error" id="brandError" ng-show="identification.car.$error.required">type of car</div>
+        <p>Location:
+          <div ng-show="identification.$submitted || identification.location.$touched">
+            <div class="error" id="brandError" ng-show="identification.location.$error.required">Location</div>
           </div>  
         </p>
-        <select id="carType" name="car" ng-model="custumer.car" ng-required="true" >
+        <select id="carType" name="location" ng-model="custumer.location" ng-required="true" >
             
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="honda">honda</option>
-            <option value="toyota">toyota</option>
+            <option value="Rogers Centre, Toronto ON">Rogers Centre, Toronto ON</option>
+            <option value="Air Canada Centre, Toronto ON">Air Canada Centre, Toronto ON</option>
+            
         </select>
 
         <p>
