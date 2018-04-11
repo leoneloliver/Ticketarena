@@ -48,7 +48,12 @@ myApp.config(function($routeProvider) {
         $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
       }
 
-      
+      $scope.remove = function (index){
+        // inserting new data
+        alert(index);
+      }
+
+
       //----------------------------------------------------  
       
   }]);
