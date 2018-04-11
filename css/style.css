@@ -336,11 +336,28 @@ a.buy:hover{
     margin-top: 3px;
     margin-right: 12px;
 }
+a.delete {
+    background: #e94042;
+    padding: 15px 18px;
+    border-radius: 50px;
+    margin-top: 7px;
+    position: absolute;
+    right: 130px;
+    color: #fff;
+    cursor: pointer;
+}
+a.delete:hover {
+    background: #ca080e;
+    color: #efefef;
+}
 
 @media (max-width: 799px){
   .item {
     width: 50%;
  
+  }
+  a.delete {
+    right: 30px;
   }
 }
 @media (max-width: 620px){
