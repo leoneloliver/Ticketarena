@@ -48,17 +48,7 @@ myApp.config(function($routeProvider) {
         $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
       }
 
-      $scope.deleteData = function (Delitem){
-        alert(Delitem);
-
-        var Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
-
-        Newconcerts.splice(Delitem,1);
-
-        window.localStorage.setItem('concerts', JSON.stringify(Newconcerts));
-
-        $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
-      }
+      
       //----------------------------------------------------  
       
   }]);
