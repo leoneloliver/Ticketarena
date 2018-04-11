@@ -13,7 +13,7 @@ function loadChartHOme(){
     },
     size:{
       canvasHeight:500,
-      canvasWidth: 650
+      canvasWidth: 680
     },
     data:{
       content:[

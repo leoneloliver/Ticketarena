@@ -381,6 +381,9 @@ a.delete:hover {
     background: #fff;
     box-sizing: border-box;
   }
+  #charthome{
+    display: none;
+  }
   div#pieChart {
     opacity: 0;
   }
