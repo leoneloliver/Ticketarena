@@ -336,9 +336,12 @@ a.buy:hover{
     margin-top: 3px;
     margin-right: 12px;
 }
+
 .img {
-    max-height: 179px;
+    height: 179px;
     overflow: hidden;
+    background-position: center !important;
+    background-size: cover !important;
 }
 a.delete {
     background: #e94042;
