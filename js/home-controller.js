@@ -71,6 +71,14 @@ myApp.config(function($routeProvider) {
           //alert('sent');
           console.log($scope.master);
           alert('insert');
+          // inserting new data
+          var oldArray = JSON.parse(window.localStorage.getItem('concerts'));
+          var newProduct = $scope.master;
+          
+          var ConvertMyconcert = JSON.stringify(oldArray.concat(newProduct));
+          window.localStorage.setItem('concerts', ConvertMyconcert);
+          
+          $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
           //document.getElementById('container').innerHTML= "<div class='header'><img src='https://marsdd.com/wp-content/uploads/2015/02/tangerine-logo.png' /></div><span>Thank you! "+$scope.master.firstName+" "+$scope.master.lastName+" <br><br>The information has been sent successfully.<br><br><br><br>  </span>";
         }
       };
