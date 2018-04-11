@@ -412,10 +412,7 @@ a.delete:hover {
     width: 100%;
 }
 
-.ng-valid{
-  background: #eaffea;
-  border: 1px solid #d2ffd0 !important;
-}
+
 @media only screen and (max-width: 630px) {
   #container{
     width: auto;
