@@ -48,11 +48,12 @@ myApp.config(function($routeProvider) {
         $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
       }
 
-      $scope.deleteData = function (item){
+      $scope.deleteData = function (Delitem){
+        alert(Delitem);
 
         var Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
 
-        Newconcerts.splice(2,1);
+        Newconcerts.splice(Delitem,1);
 
         window.localStorage.setItem('concerts', JSON.stringify(Newconcerts));
 
