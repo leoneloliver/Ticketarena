@@ -49,17 +49,32 @@ myApp.config(function($routeProvider) {
       }
 
       $scope.remove = function (index){
-        // inserting new data
-        alert(index);
-
+        
         Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
-
         Newconcerts.splice(index,1);
-
         window.localStorage.setItem('concerts', JSON.stringify(Newconcerts));
         $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
       }
 
+
+
+      // form
+
+      $scope.master = {};
+      $scope.save= function(dataCostumer) {
+        if(dataCostumer){
+          $scope.master = angular.copy(dataCostumer);
+        }
+        
+        if($scope.master.firstName && $scope.master.lastName && $scope.master.gender && $scope.master.car && ($scope.master.employment || $scope.master.employment2)){
+          //alert('sent');
+          console.log($scope.master);
+          alert('insert');
+          //document.getElementById('container').innerHTML= "<div class='header'><img src='https://marsdd.com/wp-content/uploads/2015/02/tangerine-logo.png' /></div><span>Thank you! "+$scope.master.firstName+" "+$scope.master.lastName+" <br><br>The information has been sent successfully.<br><br><br><br>  </span>";
+        }
+      };
+ 
+      // form
 
       //----------------------------------------------------  
       

@@ -1,7 +1,63 @@
 <div class="list-container" id="topresult">
   <p class="event-title">New Events</p>
 
+  <!-- form -->
+    <div id="container">
+      
+      <p class="title">Please enter the following mandatory information</p>
+      <form name="identification" novalidate>
+        <p>First Name:<input type="text" id="firstName" ng-model="custumer.firstName" name="firstName" ng-required="true" placeholder="Enter Name" />
+          <div ng-show="identification.$submitted || identification.firstName.$touched">
+            <div class="error" id="firstNameError" ng-show="identification.firstName.$error.required">first name</div>
+          </div>
+        </p>
+        <p>Last Name:<input type="text" id="lastName" ng-model="custumer.lastName" name="lastName" ng-required="true" placeholder="Enter Name"/>
+          <div ng-show="identification.$submitted || identification.lastName.$touched">
+            <div class="error" id="lastNameError" ng-show="identification.lastName.$error.required">last name</div>
+          </div>
+        </p>
+      
+        <p>Gender Type:
+          <div ng-show="identification.$submitted || identification.gender.$touched">
+            <div class="error" id="genderError" ng-show="identification.gender.$error.required">gender</div>
+          </div>
+          
+        </p>
+        <input type="radio" id="gender1" name="gender" ng-model="custumer.gender" ng-required="true" value="male">Male<br />
+        <input type="radio" id="gender2" name="gender" ng-model="custumer.gender" ng-required="true" value="female" />Female<br />
+        <input type="radio" id="gender3" name="gender" ng-model="custumer.gender" ng-required="true" value="other" />Other<br />
+        
+        
+        
+      
+        <p>Employment situation:
+          <div ng-show="identification.$submitted || identification.employment.$touched">
+            <div class="error" id="employmentError" ng-show="identification.employment.$error.required && identification.employment2.$error.required">employment</div>
+          </div>
+        </p>
+        <input type="checkbox" id="employment1" value="employ" name="employment" ng-model="custumer.employment" ng-required="true"/>Employ<br />
+        <input type="checkbox" id="employment2" value="unemploy" name="employment2" ng-model="custumer.employment2" ng-required="true"/>Not Employ<br />
+      
+        <p>Current car brand:
+          <div ng-show="identification.$submitted || identification.car.$touched">
+            <div class="error" id="brandError" ng-show="identification.car.$error.required">type of car</div>
+          </div>  
+        </p>
+        <select id="carType" name="car" ng-model="custumer.car" ng-required="true" >
+            
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="honda">honda</option>
+            <option value="toyota">toyota</option>
+        </select>
 
+        <p>
+          
+          <input type="submit" ng-click="save(custumer)" value="Submit" />
+        </p>
+      </form>
+    </div>
+  <!-- form -->
 
   <div class="btn-container">
    <input type="button" value="insert" ng-click="insertData()" id="showmore" />
