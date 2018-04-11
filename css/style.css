@@ -343,16 +343,20 @@ a.buy:hover{
     background-position: center !important;
     background-size: cover !important;
 }
+
 a.delete {
     background: #e94042;
     padding: 15px 18px;
     border-radius: 50px;
     margin-top: 7px;
-    position: absolute;
-    right: 130px;
+    /* position: absolute; */
+    /* right: 130px; */
     color: #fff;
     cursor: pointer;
+    float: right;
+    margin-right: 21px;
 }
+
 a.delete:hover {
     background: #ca080e;
     color: #efefef;
@@ -364,7 +368,6 @@ a.delete:hover {
   margin: 0 auto;
   background: #fff;
   padding: 40px;
-  box-shadow: 0px 2px 8px #7d7d7d;
 }
 #container span{
   text-align: center;
@@ -389,6 +392,7 @@ a.delete:hover {
   height: 38px;
   font-size: 1.1em;
 }
+
 #container input[type="submit"] {
     width: 100%;
     display: block;
@@ -398,13 +402,16 @@ a.delete:hover {
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
-    height: 44px;
-    font-size: 1.1em;
+    height: 36px;
+    font-size: 1em;
     border-radius: 30px;
+    width: 300px;
+    margin: 0 auto;
 }
 #container input[type="submit"]:hover{
   background: #7b746f;
 }
+
 #container .error {
     background: #eaa29d;
     color: #fff;
@@ -413,6 +420,7 @@ a.delete:hover {
     border-radius: 4px;
     border: 1px solid #ef8233;
     width: 100%;
+    font-size: 0.8em;
 }
 
 
@@ -420,7 +428,7 @@ a.delete:hover {
   #container{
     width: auto;
     padding: 25px;
-    border-top: 18px solid #ef8333;
+    
   }
   #container input[type="text"] {
     width: 100%;
