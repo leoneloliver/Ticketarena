@@ -11,11 +11,11 @@
 
 
 	<p class="event-title">Events List</p>
-  <div class="item-table" ng-repeat="concert in Newconcerts | orderBy : 'title'" ng-init="parentIndex = $index">
+  <div class="item-table" ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFilter">
     <div class="list-table">
       <div class="img-min"><img ng-src="{{concert.image}}"></div>
       <div class="title title-table">{{concert.title}}</div>
-      <input type="button" value="delete" ng-click=deleteItem(parentIndex) id="del" />
+      <input type="button" value="delete" ng-click="deleteItem($index)" id="del" />
     </div>
     
   </div>
