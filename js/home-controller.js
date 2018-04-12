@@ -70,7 +70,9 @@ myApp.config(function($routeProvider) {
         if($scope.master.title && $scope.master.desc && $scope.master.dateEvent && $scope.master.location && $scope.master.image && $scope.master.price){
           //alert('sent');
           console.log($scope.master);
-          alert('insert');
+    
+          document.getElementById('container').innerHTML= "<div class='msg'><span>Product has been created!</span></div>";
+         
           // inserting new data
           var oldArray = JSON.parse(window.localStorage.getItem('concerts'));
           var newProduct = $scope.master;

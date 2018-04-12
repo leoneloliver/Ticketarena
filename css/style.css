@@ -436,6 +436,9 @@ a.delete:hover {
     box-sizing: border-box;
     margin-top: 5px;
   }
+  #container .error{
+    width: auto;
+  }
  
 }
 /*form*/
