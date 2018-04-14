@@ -34,38 +34,7 @@ function loadChartHOme(){
       canvasWidth: 680
     },
     data:{
-      content:[
-        {
-          label:"Ozzy Osbourne",
-          value:2807,
-          color:"#6473ce"
-        },
-        {
-          label:"Pink",
-          value:1072,
-          color:"#f4837d"
-        },
-        {
-          label:"Green Day",
-          value:972,
-          color:"#00416b"
-        },
-        {
-          label:"Camila Cabello",
-          value:380,
-          color:"#a3cbef"
-        },
-        {
-          label:"5 Seconds of Summer",
-          value:580,
-          color:"#01b7ab"
-        },
-        {
-          label:"Halsey",
-          value:310,
-          color:"#333"
-        }
-      ]
+      content: newChart
     },
     labels:{
       outer:{
