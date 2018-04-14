@@ -1,6 +1,24 @@
 // Code goes here
 
+
 function loadChartHOme(){
+
+
+
+  if(localStorage.chartItem){
+    var newChart = JSON.parse(window.localStorage.getItem('chartItem'));
+  }else{
+    var json = JSON.parse(window.localStorage.getItem('concerts'));
+    str = JSON.stringify(json);
+    str = str.replace(/\"title\":/g, "\"label\":");
+    str = str.replace(/\"price\":/g, "\"value\":");
+    json = JSON.parse(str);
+    window.localStorage.setItem('chartItem', JSON.stringify(json));
+    var newChart = JSON.parse(window.localStorage.getItem('chartItem'));
+  }
+
+  document.getElementById("pieChart").innerHTML = "";
+
 
   var pie = new d3pie("pieChart",{
     header:{
