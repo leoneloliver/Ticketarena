@@ -430,10 +430,21 @@ a.delete:hover {
 }
 .table-results img{
   width: 120px;
+  height: 78px;
 }
-.table-results td{
-  border-bottom: 1px solid #ccc;
-  padding: 5px;
+.table-results td {
+  border-bottom: 2px solid #ea4042;
+  padding: 8px;
+}
+.table-results tr:hover {
+  background:#fff;
+}
+.table-results th {
+    text-align: left;
+    padding: 10px;
+    background: #e94042;
+    color: #fff;
+    font-weight: 100;
 }
 
 @media only screen and (max-width: 630px) {
