@@ -11,9 +11,6 @@ myApp.config(function($routeProvider) {
     .when("/search", {
         templateUrl : "template/search.html"
     })
-    .when("/search2", {
-        templateUrl : "template/search2.html"
-    })
     .when("/new-product", {
         templateUrl : "template/new-product.html"
     })

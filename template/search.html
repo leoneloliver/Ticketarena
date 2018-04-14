@@ -2,10 +2,10 @@
   <p class="event-title">Find All Events Near Toronto, ON</p>
 
   <div class="btn-container">
-    <input type="text" placeholder="Find a event" data-search class="search-field"/>
+    <input type="text" placeholder="Find a event" ng-model="searchString" class="search-field"/>
   </div>  
 
-  <div class="item hide" ng-repeat="concert in Newconcerts | orderBy : 'title'" data-filter-item data-filter-name={{concert.title.toLowerCase()}}>
+  <div class="item" ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFor:searchString">
     <div class="product">
       <div class="img" style="background: url({{concert.image}})"></div>
       <div class="cover"></div>
