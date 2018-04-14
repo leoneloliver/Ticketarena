@@ -5,7 +5,7 @@
     <input type="text" placeholder="Find a event" ng-model="searchString" class="search-field"/>
   </div>  
 
-  <div class="item hide" ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFor:searchString">
+  <div class="item" ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFor:searchString">
     <div class="product">
       <div class="img" style="background: url({{concert.image}})"></div>
       <div class="cover"></div>
