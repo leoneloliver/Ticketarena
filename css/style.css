@@ -444,10 +444,13 @@ a.delete:hover {
 }
 .table-results th {
     text-align: left;
-    padding: 10px;
-    background: #e94042;
+    padding: 8px 10px;
+    background: #324151;
     color: #fff;
     font-weight: 100;
+}
+.txt-center{
+  text-align: center;
 }
 
 @media only screen and (max-width: 630px) {

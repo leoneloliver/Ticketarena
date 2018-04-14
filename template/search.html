@@ -29,16 +29,16 @@
       <th>Artist</th>
       <th>Date</th>
       <th>Location</th>
-      <th>Price</th>
-      <th>Qtd Tickets</th>
+      <th class="txt-center">Price</th>
+      <th class="txt-center">Qtd Tickets</th>
     </tr>
     <tr ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFor:searchString">
       <td><img ng-src={{concert.image}}></td>
       <td>{{concert.title}}</td>
       <td>{{concert.dateEvent}}</td>
       <td>{{concert.location}}</td>
-      <td>{{concert.price}}</td>
-      <td>{{concert.qtd}}</td>
+      <td class="txt-center">{{concert.price}}</td>
+      <td class="txt-center">{{concert.qtd}}</td>
     </tr>
     
   </table>
