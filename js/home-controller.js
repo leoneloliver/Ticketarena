@@ -83,7 +83,7 @@ myApp.config(function($routeProvider) {
           // var ConvertMychart = JSON.stringify(oldchart.concat(newchart));
           // window.localStorage.setItem('chartItem', ConvertMychart);
 
-          
+          alert($scope.master.title);
 
           // inserting new data
           var oldArray = JSON.parse(window.localStorage.getItem('concerts'));
