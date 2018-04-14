@@ -74,7 +74,6 @@ myApp.config(function($routeProvider) {
           document.getElementById('container').innerHTML= "<div class='msg'><span>Product has been created!</span></div>";
          
           // // updating chart results
-
           var newprice = parseInt($scope.master.price);
           var newartist = $scope.master.title;
           var oldchart = JSON.parse(window.localStorage.getItem('chartItem'));
@@ -82,6 +81,7 @@ myApp.config(function($routeProvider) {
             
           var ConvertMychart = JSON.stringify(oldchart.concat(newchart));
           window.localStorage.setItem('chartItem', ConvertMychart);
+          loadChartHOme();
 
 
           // inserting new data
