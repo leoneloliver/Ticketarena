@@ -428,6 +428,13 @@ a.delete:hover {
     border: 1px solid #7cf760;
     border-radius: 5px;
 }
+.table-results img{
+  width: 120px;
+}
+.table-results td{
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
 
 @media only screen and (max-width: 630px) {
   #container{
