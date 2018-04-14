@@ -77,25 +77,25 @@ setTimeout(function(){ loadChartHOme(); }, 1000);
 var showChart = function () {
   var element = document.getElementById("charthome");
   element.classList.remove("hide");
-  setTimeout(function(){ onSearch();; }, 1000);
+  // setTimeout(function(){ onSearch();; }, 1000);
 };
 var hideChart = function () {
   var element = document.getElementById("charthome");
   element.classList.add("hide");
-  setTimeout(function(){ onSearch();; }, 1000);
+  // setTimeout(function(){ onSearch();; }, 1000);
 }; 
 
-function onSearch(){
-  $('.search-field, .list-container').mouseover(function() {
-    activateSearch();
-  });
-  $('#btn-search').mouseout(function(){
-    activateSearch();
-  });
-  $('#btn-search').mouseleave(function(){
-    activateSearch();
-  });
-}
+// function onSearch(){
+//   $('.search-field, .list-container').mouseover(function() {
+//     activateSearch();
+//   });
+//   $('#btn-search').mouseout(function(){
+//     activateSearch();
+//   });
+//   $('#btn-search').mouseleave(function(){
+//     activateSearch();
+//   });
+// }
 
 setTimeout(function(){ 
   document.getElementById("btn-home").addEventListener("click", showChart);
