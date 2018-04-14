@@ -73,6 +73,18 @@ myApp.config(function($routeProvider) {
     
           document.getElementById('container').innerHTML= "<div class='msg'><span>Product has been created!</span></div>";
          
+          // updating chart results
+
+          var newprice = parseInt(document.getElementById('price').value);
+          var newartist = document.getElementById('title').value;
+          var oldchart = JSON.parse(window.localStorage.getItem('chartItem'));
+          var newchart = [{ label: newartist, value: newprice }];
+            
+          var ConvertMychart = JSON.stringify(oldchart.concat(newchart));
+          window.localStorage.setItem('chartItem', ConvertMychart);
+
+          
+
           // inserting new data
           var oldArray = JSON.parse(window.localStorage.getItem('concerts'));
           var newProduct = $scope.master;
