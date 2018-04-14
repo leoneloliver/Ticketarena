@@ -67,17 +67,17 @@ myApp.config(function($routeProvider) {
         }
 
 
-        if($scope.master.title && $scope.master.desc && $scope.master.dateEvent && $scope.master.location && $scope.master.image && $scope.master.price){
+        if($scope.master.title && $scope.master.desc && $scope.master.dateEvent && $scope.master.location && $scope.master.image && $scope.master.price && $scope.master.qtd){
           //alert('sent');
           console.log($scope.master);
     
           document.getElementById('container').innerHTML= "<div class='msg'><span>Product has been created!</span></div>";
          
           // // updating chart results
-          var newprice = parseInt($scope.master.price);
+          var newqtd = parseInt($scope.master.qtd);
           var newartist = $scope.master.title;
           var oldchart = JSON.parse(window.localStorage.getItem('chartItem'));
-          var newchart = [{ label: newartist, value: newprice }];
+          var newchart = [{ label: newartist, value: newqtd }];
             
           var ConvertMychart = JSON.stringify(oldchart.concat(newchart));
           window.localStorage.setItem('chartItem', ConvertMychart);
