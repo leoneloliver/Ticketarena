@@ -2,10 +2,10 @@
   <p class="event-title">Find All Events Near Toronto, ON</p>
 
   <div class="btn-container">
-    <input type="text" placeholder="Find a event" data-search class="search-field"/>
+    <input type="text" placeholder="Find a event" ng-model="searchString" class="search-field"/>
   </div>  
 
-  <div class="item hide" ng-repeat="concert in Newconcerts | orderBy : 'title'" data-filter-item data-filter-name={{concert.title.toLowerCase()}}>
+  <div class="item hide" ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFor:searchString">
     <div class="product">
       <div class="img" style="background: url({{concert.image}})"></div>
       <div class="cover"></div>
@@ -26,18 +26,4 @@
   <hr class="hr"/>
 </div>
 
-<div class="bar">
-      <!-- Create a binding between the searchString model and the text field -->
-      <input type="text" ng-model="searchString" placeholder="Enter your search terms" />
-    </div>
 
-    <ul>
-      <!-- Render a li element for every entry in the items array. Notice
-         the custom search filter "searchFor". It takes the value of the
-         searchString model as an argument.
-       -->
-      <li ng-repeat="i in Newconcerts | searchFor:searchString">
-        <a href="{{i.url}}"><img ng-src="{{i.image}}" /></a>
-        <p>{{i.title}}</p>
-      </li>
-    </ul>
