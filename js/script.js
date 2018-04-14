@@ -23,7 +23,7 @@ function loadChartHOme(){
   var pie = new d3pie("pieChart",{
     header:{
       title:{
-        text:"Sales March 2018",
+        text:"Tickets Availability",
         color:"#ef3d43",
         fontSize:22,
         font:"verdana"
