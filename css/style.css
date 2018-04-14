@@ -428,6 +428,9 @@ a.delete:hover {
     border: 1px solid #7cf760;
     border-radius: 5px;
 }
+.table-results {
+  width: 100%;
+}
 .table-results img{
   width: 120px;
   height: 78px;
