@@ -22,6 +22,20 @@
     </div>
     
   </div>
+
+  <table>
+    <tr>
+      <th>Image</th>
+      <th>Artist</th>
+      <th>Date</th>
+    </tr>
+    <tr ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFor:searchString">
+      <td><img ng-src={{concert.image}}></td>
+      <td>{{concert.title}}</td>
+      <td>{{concert.dateEvent}}</td>
+    </tr>
+    
+  </table>
   
   <hr class="hr"/>
 </div>
