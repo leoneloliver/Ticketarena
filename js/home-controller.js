@@ -75,15 +75,14 @@ myApp.config(function($routeProvider) {
          
           // // updating chart results
 
-          // var newprice = parseInt(document.getElementById('price').value);
-          // var newartist = document.getElementById('title').value;
-          // var oldchart = JSON.parse(window.localStorage.getItem('chartItem'));
-          // var newchart = [{ label: newartist, value: newprice }];
+          var newprice = parseInt($scope.master.price);
+          var newartist = $scope.master.title;
+          var oldchart = JSON.parse(window.localStorage.getItem('chartItem'));
+          var newchart = [{ label: newartist, value: newprice }];
             
-          // var ConvertMychart = JSON.stringify(oldchart.concat(newchart));
-          // window.localStorage.setItem('chartItem', ConvertMychart);
+          var ConvertMychart = JSON.stringify(oldchart.concat(newchart));
+          window.localStorage.setItem('chartItem', ConvertMychart);
 
-          alert($scope.master.title);
 
           // inserting new data
           var oldArray = JSON.parse(window.localStorage.getItem('concerts'));
