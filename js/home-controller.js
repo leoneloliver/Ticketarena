@@ -11,6 +11,9 @@ myApp.config(function($routeProvider) {
     .when("/search", {
         templateUrl : "template/search.html"
     })
+    .when("/search2", {
+        templateUrl : "template/search2.html"
+    })
     .when("/new-product", {
         templateUrl : "template/new-product.html"
     })
@@ -37,16 +40,14 @@ myApp.config(function($routeProvider) {
       
       $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
       
-      $scope.insertData = function (){
-        // inserting new data
-        var oldArray = JSON.parse(window.localStorage.getItem('concerts'));
-        var newProduct = [{ title: "Halsey", image: "https://ssli.ebayimg.com/images/g/oy4AAOSwsW9Y2tRg/s-l1600.jpg", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", dateEvent: "Thu, Aug 30, 2018 - 7:00pm", location: "Rogers Centre, Toronto ON", price: 300 }];
-  
-        var ConvertMyconcert = JSON.stringify(oldArray.concat(newProduct));
-        window.localStorage.setItem('concerts', ConvertMyconcert);
-        
-        $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
-      }
+      // $scope.insertData = function (){
+      //   // inserting new data
+      //   var oldArray = JSON.parse(window.localStorage.getItem('concerts'));
+      //   var newProduct = [{ title: "Halsey", image: "https://ssli.ebayimg.com/images/g/oy4AAOSwsW9Y2tRg/s-l1600.jpg", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", dateEvent: "Thu, Aug 30, 2018 - 7:00pm", location: "Rogers Centre, Toronto ON", price: 300 }];
+      //   var ConvertMyconcert = JSON.stringify(oldArray.concat(newProduct));
+      //   window.localStorage.setItem('concerts', ConvertMyconcert);
+      //   $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
+      // }
 
       $scope.remove = function (index){
         
@@ -58,8 +59,7 @@ myApp.config(function($routeProvider) {
 
 
 
-      // form
-
+      // form insert
       $scope.master = {};
       $scope.save= function(dataCostumer) {
         if(dataCostumer){
@@ -77,8 +77,7 @@ myApp.config(function($routeProvider) {
           var newqtd = parseInt($scope.master.qtd);
           var newartist = $scope.master.title;
           var oldchart = JSON.parse(window.localStorage.getItem('chartItem'));
-          var newchart = [{ label: newartist, value: newqtd }];
-            
+          var newchart = [{ label: newartist, value: newqtd }];  
           var ConvertMychart = JSON.stringify(oldchart.concat(newchart));
           window.localStorage.setItem('chartItem', ConvertMychart);
           loadChartHOme();
@@ -87,10 +86,8 @@ myApp.config(function($routeProvider) {
           // inserting new data
           var oldArray = JSON.parse(window.localStorage.getItem('concerts'));
           var newProduct = $scope.master;
-          
           var ConvertMyconcert = JSON.stringify(oldArray.concat(newProduct));
           window.localStorage.setItem('concerts', ConvertMyconcert);
-          
           $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
           //document.getElementById('container').innerHTML= "<div class='header'><img src='https://marsdd.com/wp-content/uploads/2015/02/tangerine-logo.png' /></div><span>Thank you! "+$scope.master.firstName+" "+$scope.master.lastName+" <br><br>The information has been sent successfully.<br><br><br><br>  </span>";
         }
@@ -101,6 +98,41 @@ myApp.config(function($routeProvider) {
       //----------------------------------------------------  
       
   }]);
+
+
+// serach
+myApp.filter('searchFor', function(){
+
+  // All filters must return a function. The first parameter
+  // is the data that is to be filtered, and the second is an
+  // argument that may be passed with a colon (searchFor:searchString)
+
+  return function(arr, searchString){
+
+    if(!searchString){
+      return arr;
+    }
+
+    var result = [];
+
+    searchString = searchString.toLowerCase();
+
+    // Using the forEach helper method to loop through the array
+    angular.forEach(arr, function(item){
+
+      if(item.title.toLowerCase().indexOf(searchString) !== -1){
+        result.push(item);
+      }
+
+    });
+
+    return result;
+  };
+
+});
+
+// The controller
+
   
   
   
