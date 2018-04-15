@@ -312,7 +312,7 @@ a.buy:hover{
   -o-transition: all .9s ease;
   -ms-transition: all .9s ease;
   transition: all .9s ease;
-  background: #f7c6c6;
+  background: #efefef;
   border: #000 1px solid;
 }
 .title-table {
@@ -450,6 +450,10 @@ a.delete:hover {
 .txt-center{
   text-align: center;
 }
+.search-ico{
+  margin-left: -23px;
+  color: #e94042;
+}
 
 @media only screen and (max-width: 630px) {
   #container{
@@ -482,6 +486,9 @@ a.delete:hover {
 @media (max-width: 620px){
   .search-field{
     width: 90%;
+  }
+  .sm-hide{
+    display: none;
   }
   .menu {
     height: 128px;

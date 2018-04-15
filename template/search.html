@@ -3,6 +3,7 @@
 
   <div class="btn-container">
     <input type="text" placeholder="Find a event" ng-model="searchString" class="search-field"/>
+    <i class="fa fa-search search-ico" aria-hidden="true"></i>
   </div>  
 
   <!-- <div class="item" ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFor:searchString">
@@ -27,19 +28,19 @@
     <tr>
       <th>Image</th>
       <th>Artist</th>
-      <th>Date</th>
-      <th>Location</th>
-      <th class="txt-center">Price</th>
-      <th class="txt-center">Qtd Tickets</th>
+      <th class="sm-hide">Date</th>
+      <th class="sm-hide">Location</th>
+      <th class="txt-center sm-hide">Price</th>
+      <th class="txt-center sm-hide">Qtd Tickets</th>
       <th class="txt-center">Delete</th>
     </tr>
     <tr ng-repeat="concert in Newconcerts | searchFor:searchString">
       <td><img ng-src={{concert.image}}></td>
       <td>{{concert.title}}</td>
-      <td>{{concert.dateEvent}}</td>
-      <td>{{concert.location}}</td>
-      <td class="txt-center">{{concert.price | currency : $ : 2}}</td>
-      <td class="txt-center">{{concert.qtd}}</td>
+      <td class="sm-hide">{{concert.dateEvent}}</td>
+      <td class="sm-hide">{{concert.location}}</td>
+      <td class="txt-center sm-hide">{{concert.price | currency : $ : 2}}</td>
+      <td class="txt-center sm-hide">{{concert.qtd}}</td>
       <td class="txt-center"><a ng-click="remove($index)" class="delete"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
     </tr>
     
