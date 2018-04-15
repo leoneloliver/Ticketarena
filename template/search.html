@@ -31,6 +31,7 @@
       <th>Location</th>
       <th class="txt-center">Price</th>
       <th class="txt-center">Qtd Tickets</th>
+      <th class="txt-center">Delete</th>
     </tr>
     <tr ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFor:searchString">
       <td><img ng-src={{concert.image}}></td>
@@ -39,6 +40,7 @@
       <td>{{concert.location}}</td>
       <td class="txt-center">{{concert.price}}</td>
       <td class="txt-center">{{concert.qtd}}</td>
+      <td class="txt-center"><a ng-click="remove($index)" class="delete"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
     </tr>
     
   </table>
