@@ -348,13 +348,8 @@ a.delete {
     background: #e94042;
     padding: 15px 18px;
     border-radius: 50px;
-    margin-top: 7px;
-    /* position: absolute; */
-    /* right: 130px; */
     color: #fff;
     cursor: pointer;
-    float: right;
-    margin-right: 21px;
 }
 
 a.delete:hover {
