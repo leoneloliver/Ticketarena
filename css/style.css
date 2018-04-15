@@ -71,15 +71,16 @@ html.ng-scope {
   -ms-transition: all .9s ease;
   transition: all .9s ease;
 }
+
 .container {
-  min-height: auto;
-  /*padding: 30px;*/
-  clear: both;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 70px;
-  background: #fff;
-  box-sizing: border-box;
+    min-height: auto;
+    /* padding: 30px; */
+    clear: both;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    margin-top: 60px;
+    background: #fff;
+    box-sizing: border-box;
 }
 .list-container{
   max-width: 1200px;
@@ -364,6 +365,7 @@ a.delete:hover {
   background: #fff;
   padding: 40px;
 }
+
 #container span{
   text-align: center;
   display: block;
