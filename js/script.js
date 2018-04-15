@@ -43,7 +43,7 @@ function loadChartHOme(){
       mainLabel:{
         font:"verdana",
         color:"#fff",
-        fontSize: 18
+        fontSize: 15
       },
       percentage:{
         color:"#fff",
