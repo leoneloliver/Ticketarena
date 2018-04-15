@@ -49,8 +49,11 @@ myApp.config(function($routeProvider) {
       $scope.remove = function (index){
         
         Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
+        Newchart = JSON.parse(window.localStorage.getItem('chartItem'));
         Newconcerts.splice(index,1);
+        Newchart.splice(index,1);
         window.localStorage.setItem('concerts', JSON.stringify(Newconcerts));
+        window.localStorage.setItem('chartItem', JSON.stringify(Newchart));
         $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
       }
 
