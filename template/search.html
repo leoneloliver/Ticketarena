@@ -33,7 +33,7 @@
       <th class="txt-center">Qtd Tickets</th>
       <th class="txt-center">Delete</th>
     </tr>
-    <tr ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFor:searchString">
+    <tr ng-repeat="concert in Newconcerts | searchFor:searchString">
       <td><img ng-src={{concert.image}}></td>
       <td>{{concert.title}}</td>
       <td>{{concert.dateEvent}}</td>
