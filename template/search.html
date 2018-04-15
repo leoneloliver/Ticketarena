@@ -38,7 +38,7 @@
       <td>{{concert.title}}</td>
       <td>{{concert.dateEvent}}</td>
       <td>{{concert.location}}</td>
-      <td class="txt-center">{{concert.price}}</td>
+      <td class="txt-center">{{concert.price | currency : $ : 2}}</td>
       <td class="txt-center">{{concert.qtd}}</td>
       <td class="txt-center"><a ng-click="remove($index)" class="delete"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
     </tr>

@@ -433,6 +433,7 @@ a.delete:hover {
 .table-results td {
   border-bottom: 2px solid #ea4042;
   padding: 8px;
+  font-size: 0.8em;
 }
 .table-results tr:hover {
   background:#fff;
