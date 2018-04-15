@@ -55,6 +55,7 @@ myApp.config(function($routeProvider) {
         window.localStorage.setItem('concerts', JSON.stringify(Newconcerts));
         window.localStorage.setItem('chartItem', JSON.stringify(Newchart));
         $scope.Newconcerts = JSON.parse(window.localStorage.getItem('concerts'));
+        loadChartHOme();
       }
 
 
