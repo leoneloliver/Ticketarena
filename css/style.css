@@ -451,7 +451,7 @@ a.delete:hover {
   text-align: center;
 }
 .search-ico{
-  margin-left: -23px;
+  margin-left: -32px;
   color: #e94042;
 }
 
@@ -527,8 +527,8 @@ a.delete:hover {
   }
 
 }
-@media (max-width: 500px) {
-  .user a{display: none;}
+@media (max-width: 450px) {
+  .search-ico{display: none;}
 }
 /**/
 
