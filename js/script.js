@@ -5,11 +5,7 @@ setTimeout(function(){
   
   //Then read the values from the array where 0 is the first
   console.log('first page router: '+myarr[1]);
-  
-  if((myarr[1]=='/search') || (myarr[1]=='/new-product')){
-    hideChart();
-  }
-  
+
   var showChart = function () {
     var element = document.getElementById("charthome");
     element.classList.remove("hide");
@@ -20,6 +16,11 @@ setTimeout(function(){
     element.classList.add("hide");
     // setTimeout(function(){ onSearch();; }, 1000);
   }; 
+  
+  if((myarr[1]=='/search') || (myarr[1]=='/new-product')){
+    hideChart();
+  }
+  
 
 
   document.getElementById("btn-home").addEventListener("click", showChart);
