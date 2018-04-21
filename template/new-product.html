@@ -1,88 +1,83 @@
-<div class="list-container" id="topresult">
-  <p class="event-title">New Events</p>
+<di ng-controller="newproductCtrl">
 
-  <!-- form -->
-    <div id="container">
-      
-      <p class="title">Please enter the following information</p>
-      <form name="identification" novalidate>
-        <p>Artist:<input type="text" id="title" ng-model="custumer.title" name="title" ng-required="true" placeholder="Enter Artist Name" />
-          <div ng-show="identification.$submitted || identification.title.$touched">
-            <div class="error" id="firstNameError" ng-show="identification.title.$error.required">Artist</div>
-          </div>
-        </p>
-
-        <p>Image:<input type="text" id="image" ng-model="custumer.image" name="image" ng-required="true" placeholder="image path"/>
-          <div ng-show="identification.$submitted || identification.image.$touched">
-            <div class="error" id="lastNameError" ng-show="identification.image.$error.required">Image Path</div>
-          </div>
-        </p>
-      
-
-        <p>Description:<input type="text" id="desc" ng-model="custumer.desc" name="desc" ng-required="true" placeholder="Description"/>
-          <div ng-show="identification.$submitted || identification.desc.$touched">
-            <div class="error" id="lastNameError" ng-show="identification.desc.$error.required">Description</div>
-          </div>
-        </p>
-
-        <p>Date:<input type="text" id="dateEvent" ng-model="custumer.dateEvent" name="dateEvent" ng-required="true" placeholder="Date Event"/>
-          <div ng-show="identification.$submitted || identification.dateEvent.$touched">
-            <div class="error" id="lastNameError" ng-show="identification.dateEvent.$error.required">Date Event</div>
-          </div>
-        </p>
-        
-      
-        <p>Location:
-          <div ng-show="identification.$submitted || identification.location.$touched">
-            <div class="error" id="brandError" ng-show="identification.location.$error.required">Location</div>
-          </div>  
-        </p>
-        <select id="carType" name="location" ng-model="custumer.location" ng-required="true" >
-            
-            
-            <option value="Air Canada Centre, Toronto ON">Air Canada Centre, Toronto ON</option>
-            <option value="BMO Field, Toronto ON">BMO Field, Toronto ON</option>
-            <option value="Rogers Centre, Toronto ON">Rogers Centre, Toronto ON</option>
-
-        </select>
-
-        <p>Price: $<input type="text" id="price" ng-model="custumer.price" name="price" ng-required="true" placeholder="price"/>
-          <div ng-show="identification.$submitted || identification.price.$touched">
-            <div class="error" id="lastNameError" ng-show="identification.price.$error.required">Price</div>
-          </div>
-        </p>
-
-        <p>Qtd Tickets<input type="text" id="qtd" ng-model="custumer.qtd" name="qtd" ng-required="true" placeholder="qtd"/>
-          <div ng-show="identification.$submitted || identification.qtd.$touched">
-            <div class="error" id="qtdError" ng-show="identification.qtd.$error.required">Qtd Tickets</div>
-          </div>
-        </p>
-
-
-        <p>
-          
-          <input type="submit" ng-click="save(custumer)" value="Add New Event" />
-        </p>
-      </form>
-    </div>
-  <!-- form -->
-
-  <div class="btn-container hide">
-   <input type="button" value="insert" ng-click="insertData()" id="showmore" />
-	</div> 
-
-	<br>
-
-
-	<!-- <p class="event-title">Events List</p>
-  <div class="item-table" ng-repeat="concert in Newconcerts">
-    <div class="list-table">
-      <div class="img-min"><img ng-src="{{concert.image}}"></div>
-      <div class="title title-table">{{concert.title}}</div>
-      <a ng-click="remove($index)" class="delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
-    </div>
-    
-  </div> -->
+  <div class="list-container" id="topresult">
+    <p class="event-title">New Events</p>
   
-  <hr class="hr"/>
+    <!-- form -->
+      <div id="container">
+        
+        <p class="title">Please enter the following information</p>
+        <form name="identification" novalidate>
+          <p>Artist:<input type="text" id="title" ng-model="custumer.title" name="title" ng-required="true" placeholder="Enter Artist Name" />
+            <div ng-show="identification.$submitted || identification.title.$touched">
+              <div class="error" id="firstNameError" ng-show="identification.title.$error.required">Artist</div>
+            </div>
+          </p>
+  
+          <p>Image:<input type="text" id="image" ng-model="custumer.image" name="image" ng-required="true" placeholder="image path"/>
+            <div ng-show="identification.$submitted || identification.image.$touched">
+              <div class="error" id="lastNameError" ng-show="identification.image.$error.required">Image Path</div>
+            </div>
+          </p>
+        
+  
+          <p>Description:<input type="text" id="desc" ng-model="custumer.desc" name="desc" ng-required="true" placeholder="Description"/>
+            <div ng-show="identification.$submitted || identification.desc.$touched">
+              <div class="error" id="lastNameError" ng-show="identification.desc.$error.required">Description</div>
+            </div>
+          </p>
+  
+          <p>Date:<input type="text" id="dateEvent" ng-model="custumer.dateEvent" name="dateEvent" ng-required="true" placeholder="Date Event"/>
+            <div ng-show="identification.$submitted || identification.dateEvent.$touched">
+              <div class="error" id="lastNameError" ng-show="identification.dateEvent.$error.required">Date Event</div>
+            </div>
+          </p>
+          
+        
+          <p>Location:
+            <div ng-show="identification.$submitted || identification.location.$touched">
+              <div class="error" id="brandError" ng-show="identification.location.$error.required">Location</div>
+            </div>  
+          </p>
+          <select id="carType" name="location" ng-model="custumer.location" ng-required="true" >
+              
+              
+              <option value="Air Canada Centre, Toronto ON">Air Canada Centre, Toronto ON</option>
+              <option value="BMO Field, Toronto ON">BMO Field, Toronto ON</option>
+              <option value="Rogers Centre, Toronto ON">Rogers Centre, Toronto ON</option>
+  
+          </select>
+  
+          <p>Price: $<input type="text" id="price" ng-model="custumer.price" name="price" ng-required="true" placeholder="price"/>
+            <div ng-show="identification.$submitted || identification.price.$touched">
+              <div class="error" id="lastNameError" ng-show="identification.price.$error.required">Price</div>
+            </div>
+          </p>
+  
+          <p>Qtd Tickets<input type="text" id="qtd" ng-model="custumer.qtd" name="qtd" ng-required="true" placeholder="qtd"/>
+            <div ng-show="identification.$submitted || identification.qtd.$touched">
+              <div class="error" id="qtdError" ng-show="identification.qtd.$error.required">Qtd Tickets</div>
+            </div>
+          </p>
+  
+  
+          <p>
+            
+            <input type="submit" ng-click="save(custumer)" value="Add New Event" />
+          </p>
+        </form>
+      </div>
+    <!-- form -->
+  
+    <div class="btn-container hide">
+     <input type="button" value="insert" ng-click="insertData()" id="showmore" />
+  	</div> 
+  
+  	<br>
+
+    
+    <hr class="hr"/>
+  </div>
+  
 </div>
+

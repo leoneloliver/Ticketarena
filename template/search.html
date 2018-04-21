@@ -1,50 +1,34 @@
-<div class="list-container" id="topresult">
-  <p class="event-title">Find All Events Near Toronto, ON</p>
-
-  <div class="btn-container">
-    <input type="text" placeholder="Find a event" ng-model="searchString" class="search-field"/>
-    <i class="fa fa-search search-ico" aria-hidden="true"></i>
-  </div>  
-
-  <!-- <div class="item" ng-repeat="concert in Newconcerts | orderBy : 'title' | searchFor:searchString">
-    <div class="product">
-      <div class="img" style="background: url({{concert.image}})"></div>
-      <div class="cover"></div>
-      <div class="content-btn">
-        <a class="buy">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy Ticket
-        </a>
-      </div>
-      <div class="title">{{concert.title}}</div>
-      <div class="description">{{concert.desc}}</div>
-      <div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{concert.dateEvent}}</div>
-      <div class="event-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{concert.location}}</div>
-      <div class="price">{{concert.price | currency : $ : 2}}</div>
-    </div>
-    
-  </div> -->
-
-  <table class="table-results">
-    <tr>
-      <th>Image</th>
-      <th>Artist</th>
-      <th class="sm-hide">Date</th>
-      <th class="sm-hide">Location</th>
-      <th class="txt-center sm-hide">Price</th>
-      <th class="txt-center sm-hide">Qtd Tickets</th>
-      <th class="txt-center">Delete</th>
-    </tr>
-    <tr ng-repeat="concert in Newconcerts | searchFor:searchString">
-      <td><img ng-src={{concert.image}}></td>
-      <td>{{concert.title}}</td>
-      <td class="sm-hide">{{concert.dateEvent}}</td>
-      <td class="sm-hide">{{concert.location}}</td>
-      <td class="txt-center sm-hide">{{concert.price | currency : $ : 2}}</td>
-      <td class="txt-center sm-hide">{{concert.qtd}}</td>
-      <td class="txt-center"><a ng-click="remove($index)" class="delete"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
-    </tr>
-    
-  </table>
+<div ng-controller="listsearchCtrl">
+  <div class="list-container" id="topresult">
+    <p class="event-title">Find All Events Near Toronto, ON</p>
   
-  <hr class="hr"/>
+    <div class="btn-container">
+      <input type="text" placeholder="Find a event" ng-model="searchString" class="search-field"/>
+      <i class="fa fa-search search-ico" aria-hidden="true"></i>
+    </div>  
+  
+    <table class="table-results">
+      <tr>
+        <th>Image</th>
+        <th>Artist</th>
+        <th class="sm-hide">Date</th>
+        <th class="sm-hide">Location</th>
+        <th class="txt-center sm-hide">Price</th>
+        <th class="txt-center sm-hide">Qtd Tickets</th>
+        <th class="txt-center ico-delete">Delete</th>
+      </tr>
+      <tr ng-repeat="concert in Newconcerts | searchFor:searchString">
+        <td><img ng-src={{concert.image}}></td>
+        <td>{{concert.title}}</td>
+        <td class="sm-hide">{{concert.dateEvent}}</td>
+        <td class="sm-hide">{{concert.location}}</td>
+        <td class="txt-center sm-hide">{{concert.price | currency : $ : 2}}</td>
+        <td class="txt-center sm-hide">{{concert.qtd}}</td>
+        <td class="txt-center ico-delete"><a ng-click="remove($index)" class="delete"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+      </tr>
+      
+    </table>
+    
+    <hr class="hr"/>
+  </div>
 </div>

@@ -1,3 +1,4 @@
+
 /* Styles go here */
 body, html, ul{
   padding: 0;
@@ -119,15 +120,6 @@ html.ng-scope {
   background: #fff;
   height: 440px;
 }
-/*.product:hover img{*/
-/*  box-shadow: 1px 1px 8px #e0dfdf;*/
-/*  -webkit-transition: all .9s ease;*/
-/*  -moz-transition: all .9s ease;*/
-/*  -o-transition: all .9s ease;*/
-/*  -ms-transition: all .9s ease;*/
-/*  transition: all .9s ease;*/
-/*  opacity:0.9;*/
-/*}*/
 
 .cover {
   -webkit-transform: skewY(-3deg);
@@ -247,7 +239,6 @@ a.buy:hover{
 }
 .chat-bg {
   padding-top: 26px;
-  background: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/62/58/9357aaf395cae75.jpg);
   background: url(../img/background.jpg);
   background-position: center;
   background-size: cover;
@@ -530,36 +521,3 @@ a.delete:hover {
 @media (max-width: 450px) {
   .search-ico{display: none;}
 }
-/**/
-
-/*.chart .legend {*/
-/*  fill: black;*/
-/*  font: 14px sans-serif;*/
-/*  text-anchor: start;*/
-/*  font-size: 12px;*/
-/*}*/
-
-/*.chart text {*/
-/*  fill: white;*/
-/*  font: 10px sans-serif;*/
-/*  text-anchor: end;*/
-/*}*/
-
-/*.chart .label {*/
-/*  fill: black;*/
-/*  font: 14px sans-serif;*/
-/*  text-anchor: end;*/
-/*}*/
-
-/*.bar:hover {*/
-/*  fill: brown;*/
-/*}*/
-
-/*.axis path,*/
-/*.axis line {*/
-/*  fill: none;*/
-/*  stroke: #000;*/
-/*  shape-rendering: crispEdges;*/
-/*}*/
-
-

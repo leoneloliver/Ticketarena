@@ -1,26 +1,29 @@
-<div class="list-container">
-  <p class="event-title">All Events Near Toronto, ON</p>
+<div ng-controller="listCtrl">
 
-  <div class="item" ng-repeat="concert in Newconcerts | orderBy : 'title' | limitTo: 3">
-    <div class="product">
-      <div class="img" style="background: url({{concert.image}})"></div>
-      <div class="cover"></div>
-      <div class="content-btn">
-        <a class="buy">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy Ticket
-        </a>
-      </div>
-      <div class="title">{{concert.title}}</div>
-      <div class="description">{{concert.desc}}</div>
-      <div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{concert.dateEvent}}</div>
-      <div class="event-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{concert.location}}</div>
-      <div class="price">{{concert.price | currency : $ : 2}}</div>
-    </div>
-  </div>
+  <div class="list-container">
+    <p class="event-title">All Events Near Toronto, ON</p>
   
-  <div class="btn-container">
-    <a href="#!full" id="showmore" name="charthome"/>Show More</a>   
-  </div>
-  <hr class="hr"/>
-</div>
+    <div class="item" ng-repeat="concert in Newconcerts | orderBy : 'title' | limitTo: 3">
+      <div class="product">
+        <div class="img" style="background: url({{concert.image}})"></div>
+        <div class="cover"></div>
+        <div class="content-btn">
+          <a class="buy">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Buy Ticket
+          </a>
+        </div>
+        <div class="title">{{concert.title}}</div>
+        <div class="description">{{concert.desc}}</div>
+        <div class="event-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{concert.dateEvent}}</div>
+        <div class="event-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{concert.location}}</div>
+        <div class="price">{{concert.price | currency : $ : 2}}</div>
+      </div>
+    </div>
     
+    <div class="btn-container">
+      <a href="#!full" id="showmore" name="charthome">Show More</a>   
+    </div>
+    <hr class="hr"/>
+  </div>
+
+</div>
